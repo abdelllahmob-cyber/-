@@ -241,9 +241,33 @@ body {
 .hero-subtitle {
     font-size: 1.08rem;
     color: var(--text-secondary);
-    margin-bottom: 36px;
+    margin-bottom: 24px;
     max-width: 520px;
     line-height: 1.8;
+}
+
+/* Hero Offer List */
+.hero-offer-list {
+    list-style: none;
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.hero-offer-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.hero-offer-list li i {
+    color: var(--accent);
+    font-size: 1rem;
+    flex-shrink: 0;
 }
 
 .hero-cta {
@@ -386,6 +410,11 @@ body {
     color: white;
 }
 
+.card-icon.teal {
+    background: #0891B2;
+    color: white;
+}
+
 .card-title {
     font-weight: 700;
     font-size: 0.92rem;
@@ -442,6 +471,101 @@ body {
 .progress-label {
     font-size: 0.75rem;
     color: var(--text-secondary);
+}
+
+/* Mockup Browser in Hero Card */
+.mockup-browser {
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.mock-bar {
+    background: var(--gray-100);
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mock-dots {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.mock-dots span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.mock-dots span:first-child { background: #FC5C5C; }
+.mock-dots span:nth-child(2) { background: #FCBE2C; }
+.mock-dots span:last-child { background: #35CD4B; }
+
+.mock-url {
+    background: white;
+    border-radius: 4px;
+    padding: 2px 10px;
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    flex: 1;
+    text-align: center;
+}
+
+.mock-body {
+    padding: 12px;
+    background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
+}
+
+.mock-clinic-name {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.mock-line {
+    height: 5px;
+    background: rgba(21,101,192,0.15);
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.mock-line.w80 { width: 80%; }
+.mock-line.w60 { width: 60%; margin: 0 auto 8px; }
+
+.mock-cta-btn {
+    background: var(--accent);
+    color: white;
+    text-align: center;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.62rem;
+    font-weight: 700;
+    margin: 8px auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mock-info {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 7px;
+}
+
+.mock-info span {
+    color: var(--text-secondary);
+    font-size: 0.63rem;
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
 
 /* WhatsApp Preview */
@@ -656,6 +780,128 @@ body {
     color: var(--accent);
     font-size: 0.82rem;
     flex-shrink: 0;
+}
+
+/* Website Feature Card (Full Width) */
+.service-card.website-feature {
+    grid-column: 1 / -1;
+    background: linear-gradient(140deg, #F0F9FF 0%, #E0F2FE 60%, #EFF6FF 100%);
+    border-color: rgba(21,101,192,0.25);
+}
+
+.website-service-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 52px;
+    align-items: center;
+}
+
+.website-service-text .service-icon {
+    background: rgba(21,101,192,0.12);
+}
+
+/* Site Preview Card */
+.site-preview-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--gray-200);
+}
+
+.spv-header {
+    background: var(--gray-100);
+    padding: 9px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spv-dots {
+    display: flex;
+    gap: 5px;
+}
+
+.spv-dots span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.spv-dots span:first-child { background: #FC5C5C; }
+.spv-dots span:nth-child(2) { background: #FCBE2C; }
+.spv-dots span:last-child { background: #35CD4B; }
+
+.spv-url {
+    background: white;
+    border-radius: 5px;
+    padding: 3px 16px;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    flex: 1;
+    text-align: center;
+    border: 1px solid var(--gray-200);
+}
+
+.spv-hero-area {
+    background: linear-gradient(135deg, #1565C0, #1976D2);
+    padding: 28px 20px;
+    text-align: center;
+}
+
+.spv-icon {
+    font-size: 2.2rem;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.spv-clinic-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.spv-clinic-sub {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 16px;
+}
+
+.spv-book-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--accent);
+    color: white;
+    padding: 9px 20px;
+    border-radius: 22px;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.spv-info-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 14px;
+    background: white;
+    border-top: 1px solid var(--gray-100);
+}
+
+.spv-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.73rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.spv-info-item i {
+    color: var(--primary);
+    font-size: 1.05rem;
 }
 
 /* ========================
@@ -1481,6 +1727,15 @@ body {
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .website-service-inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .hero-offer-list {
+        text-align: right;
     }
 
     .steps-container {
