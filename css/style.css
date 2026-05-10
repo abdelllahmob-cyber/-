@@ -1675,34 +1675,42 @@ body {
     }
 
     .hero {
-        padding: 90px 20px 70px;
+        padding: 84px 16px 52px;
+        min-height: auto;
     }
 
     .hero .container {
         grid-template-columns: 1fr;
-        gap: 44px;
+        gap: 36px;
         text-align: center;
     }
 
     .hero-title {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
+        line-height: 1.4;
     }
 
     .hero-badge {
-        margin: 0 auto 20px;
+        margin: 0 auto 16px;
     }
 
     .hero-subtitle {
-        margin: 0 auto 32px;
+        margin: 0 auto 20px;
         text-align: center;
+        font-size: 0.98rem;
     }
 
     .hero-cta {
         justify-content: center;
+        margin-bottom: 32px;
     }
 
     .hero-stats {
         justify-content: center;
+    }
+
+    .hero-offer-list {
+        margin-bottom: 28px;
     }
 
     .hero-image {
@@ -1767,9 +1775,47 @@ body {
         order: 2;
     }
 
+    /* Pricing mobile */
+    .pricing {
+        padding: 64px 16px;
+    }
+
     .pricing-grid {
         grid-template-columns: 1fr;
-        max-width: 480px;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .pricing-card {
+        padding: 28px 22px;
+    }
+
+    .amount {
+        font-size: 3.4rem;
+    }
+
+    .btn-pricing {
+        padding: 15px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .pricing-features li {
+        font-size: 0.9rem;
+        gap: 8px;
+    }
+
+    /* Hero offer list mobile */
+    .hero-offer-list {
+        text-align: right;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-offer-list li {
+        font-size: 0.9rem;
+        justify-content: flex-start;
     }
 
     .cta-content h2 {
@@ -1799,6 +1845,50 @@ body {
 
     .hero-image {
         display: none;
+    }
+
+    /* Pricing extra compact on small phones */
+    .pricing {
+        padding: 52px 14px;
+    }
+
+    .pricing-card {
+        padding: 24px 18px;
+    }
+
+    .pricing-header {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pricing-header h3 {
+        font-size: 1.15rem;
+        margin-bottom: 12px;
+    }
+
+    .amount {
+        font-size: 3rem;
+    }
+
+    .pricing-header p {
+        font-size: 0.85rem;
+    }
+
+    .pricing-features {
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    .pricing-features li {
+        font-size: 0.87rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.55rem;
+    }
+
+    .section-header p {
+        font-size: 0.92rem;
     }
 
     .cta-trust {
