@@ -1875,12 +1875,21 @@ body {
     }
 
     .pricing-features {
-        gap: 12px;
-        margin-bottom: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 8px;
+        margin-bottom: 22px;
     }
 
     .pricing-features li {
-        font-size: 0.87rem;
+        font-size: 0.83rem;
+        gap: 5px;
+        align-items: flex-start;
+    }
+
+    .pricing-features i {
+        margin-top: 3px;
+        font-size: 0.75rem;
     }
 
     .section-header h2 {
