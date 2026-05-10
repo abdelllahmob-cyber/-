@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 </head>
 <body>
 
@@ -337,6 +338,28 @@
         </div>
     </section>
 
+    <!-- ===== Site Demo Video ===== -->
+    <section class="video-section site-demo-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">شاهد المنتج</span>
+                <h2>هكذا يبدو موقع عيادتك</h2>
+                <p>موقع احترافي، سريع، وجاذب — صُمِّم خصيصاً لعيادات الأسنان</p>
+            </div>
+            <div class="video-frame-wrapper">
+                <div class="video-browser-bar">
+                    <div class="vb-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="vb-url">عيادتك.com</div>
+                </div>
+                <div class="video-player-wrap">
+                    <video id="site-demo-video" controls playsinline preload="metadata"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== How We Work Section ===== -->
     <section class="how-we-work" id="how-we-work">
         <div class="container">
@@ -388,6 +411,22 @@
                         <h3>تحسين النتائج</h3>
                         <p>نحلل النتائج باستمرار ونطور الحملات أسبوعياً لضمان أفضل عائد على استثمارك</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Results Video ===== -->
+    <section class="video-section results-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge results-badge">نتائج حقيقية</span>
+                <h2 class="results-title">شاهد نتائج حملاتنا الإعلانية</h2>
+                <p class="results-sub">أرقام حقيقية من Facebook Ads — لعيادات حقيقية أدرنا حملاتها</p>
+            </div>
+            <div class="video-glow-wrapper">
+                <div class="video-glow-inner">
+                    <video id="results-video" controls playsinline preload="metadata"></video>
                 </div>
             </div>
         </div>

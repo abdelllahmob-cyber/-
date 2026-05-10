@@ -103,3 +103,25 @@ document.querySelectorAll('.chart-bar').forEach(bar => {
         this.classList.add('active');
     });
 });
+
+// HLS Video Players (Bunny.net streams)
+const initHLS = (videoId, src) => {
+    const video = document.getElementById(videoId);
+    if (!video) return;
+    if (typeof Hls !== 'undefined' && Hls.isSupported()) {
+        const hls = new Hls({ startLevel: -1, enableWorker: true });
+        hls.loadSource(src);
+        hls.attachMedia(video);
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = src;
+    }
+};
+
+initHLS(
+    'site-demo-video',
+    'https://vz-8d74ca40-f55.b-cdn.net/3383f005-7a67-40e0-9b9a-594be2924a05/playlist.m3u8'
+);
+initHLS(
+    'results-video',
+    'https://vz-8d74ca40-f55.b-cdn.net/ee2094b0-c5e8-492b-ba4c-b85438849d98/playlist.m3u8'
+);
